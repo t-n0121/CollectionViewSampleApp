@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="buZ-OE-2Q8">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--検索結果-->
+        <scene sceneID="mkL-0s-9Kc">
+            <objects>
+                <viewController storyboardIdentifier="SampleSearchResultView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bKv-ao-foZ" customClass="SampleSearchResultViewController" customModule="CollectionViewSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aQy-ya-MNX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8j-jx-aeW">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <connections>
+                                    <segue destination="SkH-0A-hQV" kind="embed" id="FvK-4g-QMr"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.1450980392" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r8j-jx-aeW" firstAttribute="bottom" secondItem="MqX-Sy-kF5" secondAttribute="bottom" id="ODa-FQ-HZT"/>
+                            <constraint firstItem="r8j-jx-aeW" firstAttribute="top" secondItem="MqX-Sy-kF5" secondAttribute="top" id="ktq-lc-Y2M"/>
+                            <constraint firstItem="r8j-jx-aeW" firstAttribute="trailing" secondItem="MqX-Sy-kF5" secondAttribute="trailing" id="qMd-pm-Bc4"/>
+                            <constraint firstItem="r8j-jx-aeW" firstAttribute="leading" secondItem="MqX-Sy-kF5" secondAttribute="leading" id="yWA-an-fum"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MqX-Sy-kF5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="検索結果" id="iZR-MP-CSv">
+                        <barButtonItem key="backBarButtonItem" title=" " id="zU3-XZ-X4a"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NgI-Vl-q9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="329.68515742128938"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tdc-3Q-cQ3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="buZ-OE-2Q8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="MoZ-Ax-PLh">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.15686274510000001" green="0.1450980392" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bKv-ao-foZ" kind="relationship" relationship="rootViewController" id="RIL-0O-NlT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Jx-gI-LEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359.19999999999999" y="329.68515742128938"/>
+        </scene>
+        <!--SampleContents-->
+        <scene sceneID="M6I-nD-gdS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SampleContents" id="SkH-0A-hQV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajQ-Th-EPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="329"/>
+        </scene>
+    </scenes>
+</document>
