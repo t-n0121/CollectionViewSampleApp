@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AD" id="gTV-IL-0wX" customClass="IllustrationADCollectionViewCell" customModule="mangahack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3P-f5-zFW">
+                        <rect key="frame" x="8" y="4" width="359" height="297"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.75294117650000003" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="y3P-f5-zFW" secondAttribute="height" multiplier="359:297" id="W1o-i2-8Hw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="y3P-f5-zFW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="P3D-jK-YoV"/>
+                <constraint firstAttribute="bottom" secondItem="y3P-f5-zFW" secondAttribute="bottom" id="aVZ-rv-RSQ"/>
+                <constraint firstItem="y3P-f5-zFW" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cNl-oO-mD3"/>
+            </constraints>
+            <size key="customSize" width="359" height="293"/>
+            <point key="canvasLocation" x="-163.5" y="-32.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
