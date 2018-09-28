@@ -51,10 +51,10 @@ class SampleItemImageView: UIView {
 	private func imageAspectConstriant(width: CGFloat, height: CGFloat) -> NSLayoutConstraint {
 		return NSLayoutConstraint(
 			item: imageView,
-			attribute: NSLayoutAttribute.height,
-			relatedBy: NSLayoutRelation.equal,
+            attribute: NSLayoutConstraint.Attribute.height,
+            relatedBy: NSLayoutConstraint.Relation.equal,
 			toItem: imageView,
-			attribute: NSLayoutAttribute.width,
+            attribute: NSLayoutConstraint.Attribute.width,
 			multiplier: height / width,
 			constant: 0
 		)

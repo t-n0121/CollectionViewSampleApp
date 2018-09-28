@@ -19,8 +19,8 @@ class SampleItemTag: UIButton {
 		configure()
 
 		if let title = title(for: state) {
-			let attributes: [NSAttributedStringKey: Any] = [
-				NSAttributedStringKey(kCTLanguageAttributeName as String): "ja",
+            let attributes: [NSAttributedString.Key: Any] = [
+                NSAttributedString.Key(kCTLanguageAttributeName as String): "ja",
 				]
 
 			titleLabel?.attributedText = NSAttributedString(string: title, attributes: attributes)

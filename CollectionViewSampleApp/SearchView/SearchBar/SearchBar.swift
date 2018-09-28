@@ -66,7 +66,7 @@ class SearchBar: UISearchBar {
 		// キャンセルボタンの設定
 		let font = UIFont.systemFont(ofSize: 14)
 		let textColor = UIColor.white
-		let attr: [NSAttributedStringKey : Any] = [.font : font, .foregroundColor: textColor]
+        let attr: [NSAttributedString.Key : Any] = [.font : font, .foregroundColor: textColor]
 		UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes(attr, for: .normal)
 		UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes(attr, for: .highlighted)
 

@@ -38,8 +38,8 @@ class SampleRelatedItemView: UIView {
 	public override func prepareForInterfaceBuilder() {
 		super.prepareForInterfaceBuilder()
 
-		let attributes: [NSAttributedStringKey: Any] = [
-			NSAttributedStringKey(kCTLanguageAttributeName as String): "ja",
+        let attributes: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key(kCTLanguageAttributeName as String): "ja",
 			]
 
 		nameLabel.attributedText = NSAttributedString(string: "Related Items", attributes: attributes)

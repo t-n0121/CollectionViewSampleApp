@@ -834,7 +834,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Teruki.Nakano.CollectionViewSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -856,7 +856,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Teruki.Nakano.CollectionViewSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -876,7 +876,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Teruki.Nakano.CollectionViewSampleAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionViewSampleApp.app/CollectionViewSampleApp";
 			};
@@ -897,7 +897,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Teruki.Nakano.CollectionViewSampleAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionViewSampleApp.app/CollectionViewSampleApp";
 			};
@@ -917,7 +917,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Teruki.Nakano.CollectionViewSampleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CollectionViewSampleApp;
 			};
@@ -937,7 +937,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Teruki.Nakano.CollectionViewSampleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CollectionViewSampleApp;
 			};
