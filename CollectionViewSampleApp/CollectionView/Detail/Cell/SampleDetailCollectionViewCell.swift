@@ -35,12 +35,12 @@ class SampleDetailCollectionViewCell: UICollectionViewCell {
     }
 
 	private func observeViewModel(viewModel: SampleDetailContentsViewModel) {
-		viewModel.selectedRelatedItemEvent.subscribe(onNext: { (id) in
-			self.delegate?.relatedItemTapped(id: id)
+		viewModel.selectedRelatedItemEvent.subscribe(onNext: { [weak self] (id) in
+			self?.delegate?.relatedItemTapped(id: id)
 		}).disposed(by: disposeBag)
 
-		viewModel.selectedHashTagEvent.subscribe(onNext: { (tag) in
-			self.delegate?.hashTagButtonTapped(tag: tag)
+		viewModel.selectedHashTagEvent.subscribe(onNext: { [weak self] (tag) in
+			self?.delegate?.hashTagButtonTapped(tag: tag)
 		}).disposed(by: disposeBag)
 	}
 }
